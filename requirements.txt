@@ -1,0 +1,4 @@
+PySide6>=6.7
+pymem>=1.12
+pywin32>=306
+pytest>=8.0
