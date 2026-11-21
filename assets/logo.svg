@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- background slab -->
+  <rect width="256" height="256" fill="#0e1410"/>
+  <!-- hairline data grid -->
+  <g stroke="#e8efe6" stroke-width="0.6" opacity="0.18">
+    <path d="M0 32H256M0 64H256M0 96H256M0 128H256M0 160H256M0 192H256M0 224H256"/>
+    <path d="M32 0V256M64 0V256M96 0V256M128 0V256M160 0V256M192 0V256M224 0V256"/>
+  </g>
+  <!-- pitch half chalkboard frame, offset upper-left -->
+  <g stroke="#e8efe6" stroke-width="2" fill="none">
+    <path d="M28 40H196V236H28Z"/>
+    <!-- half-way line (top edge of half-pitch) -->
+    <path d="M28 88H196"/>
+    <!-- centre circle arc -->
+    <path d="M84 88A28 28 0 0 0 140 88"/>
+    <!-- penalty box -->
+    <path d="M70 40V152H154V40"/>
+    <!-- six-yard box -->
+    <path d="M98 40V104H126V40"/>
+    <!-- penalty spot -->
+    <circle cx="112" cy="118" r="3" fill="#e8efe6"/>
+    <!-- goal mouth ticks -->
+    <path d="M104 40V32M120 40V32"/>
+    <!-- chalk tactical arrows: player run -->
+    <path d="M64 176L104 148L136 168" stroke="#7bd63a" stroke-width="2.2" stroke-linecap="square"/>
+    <path d="M104 148L98 136M104 148L110 138" stroke="#7bd63a" stroke-width="2.2"/>
+    <path d="M136 168L152 156" stroke="#7bd63a" stroke-width="2.2"/>
+    <path d="M152 156L146 144M152 156L158 146" stroke="#7bd63a" stroke-width="2.2"/>
+    <!-- chalk player nodes -->
+    <circle cx="64" cy="176" r="5" fill="#7bd63a"/>
+    <circle cx="104" cy="148" r="5" fill="#7bd63a"/>
+    <circle cx="136" cy="168" r="5" fill="#7bd63a"/>
+    <!-- x marker (opponent) -->
+    <path d="M164 188L176 200M176 188L164 200" stroke="#f2b23c" stroke-width="2.4" stroke-linecap="square"/>
+    <!-- arrow into press -->
+    <path d="M148 176L164 194" stroke="#f2b23c" stroke-width="2"/>
+    <!-- pass lane hairline -->
+    <path d="M64 176L104 196L136 168" stroke="#e8efe6" stroke-width="1" stroke-dasharray="3 3" opacity="0.7"/>
+  </g>
+  <!-- magnifying lens overlaid lower-right, cropped by frame edge subtly -->
+  <g>
+    <!-- lens handle -->
+    <path d="M186 204L214 232" stroke="#f2b23c" stroke-width="7" stroke-linecap="square"/>
+    <path d="M186 204L214 232" stroke="#0e1410" stroke-width="2" stroke-linecap="square"/>
+    <!-- lens ring -->
+    <circle cx="168" cy="186" r="34" fill="none" stroke="#e8efe6" stroke-width="4"/>
+    <circle cx="168" cy="186" r="29" fill="none" stroke="#e8efe6" stroke-width="1" opacity="0.6"/>
+    <!-- lens glass tint -->
+    <circle cx="168" cy="186" r="29" fill="#7bd63a" opacity="0.10"/>
+    <!-- highlight tick inside lens -->
+    <path d="M150 170L162 182" stroke="#e8efe6" stroke-width="1.5" opacity="0.8"/>
+  </g>
+  <!-- forensic "02:00" monospace stamp, small top-right -->
+  <g fill="#f2b23c" font-family="monospace" font-size="10" letter-spacing="1.5">
+    <text x="196" y="30" text-anchor="end">02:00</text>
+  </g>
+  <!-- tiny scale ticks along bottom-left -->
+  <g stroke="#e8efe6" stroke-width="1" opacity="0.55">
+    <path d="M28 246H60M28 242V250M40 244V248M52 244V248M60 242V250"/>
+  </g>
+  <!-- wordmark optional small, bottom-right -->
+  <g fill="#e8efe6" font-family="monospace" font-size="9" letter-spacing="1.2" opacity="0.85">
+    <text x="228" y="246" text-anchor="end">fm27-matchlab</text>
+  </g>
+</svg>
